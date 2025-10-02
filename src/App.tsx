@@ -1,6 +1,7 @@
 import { WorkflowManager } from './components/workflow/core/WorkflowManager';
 import { sampleWorkflow } from './data/sampleWorkflow';
 import type { Workflow } from './types/workflow';
+import { Analytics } from '@vercel/analytics/react';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         onWorkflowUpdate={handleWorkflowUpdate}
         className="w-full h-full"
       />
+      <Analytics />
     </div>
   );
 }
