@@ -66,3 +66,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Workflow canvas cursor: show grab/grabbing over the main pane for panning */
+.react-flow__pane {
+  cursor: grab !important;
+}
+
+.react-flow__pane.dragging,
+.react-flow__container.dragging .react-flow__pane {
+  cursor: grabbing !important;
+}
